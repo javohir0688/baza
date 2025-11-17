@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javohir Cloud</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <div class="background"></div>
+
+  <div class="container">
+    <h1>Javohir Cloud</h1>
+
+    <!-- Auth -->
+    <div id="auth-section">
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Parol">
+      <button id="signup-btn">Ro'yxatdan o'tish</button>
+      <button id="login-btn">Kirish</button>
+      <button id="logout-btn" style="display:none;">Chiqish</button>
+    </div>
+
+    <!-- Upload -->
+    <div id="upload-section" style="display:none;">
+      <input type="file" id="file-input" multiple>
+      <input type="text" id="file-name" placeholder="Fayl nomi">
+      <select id="file-type">
+        <option value="image">Rasm</option>
+        <option value="video">Video</option>
+        <option value="text">Matn</option>
+      </select>
+      <textarea id="text-content" placeholder="Matn yozing" style="display:none;"></textarea>
+      <button id="upload-btn">Yuklash</button>
+    </div>
+
+    <!-- Search -->
+    <div id="search-section" style="display:none;">
+      <input type="text" id="search-input" placeholder="Qidiruv">
+      <input type="date" id="search-date">
+      <button id="search-btn">Qidirish</button>
+    </div>
+
+    <!-- Gallery -->
+    <div id="gallery"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
